@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flipkart Home - Bootstrap</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> 
+  <style>
+    body {
+      background-color: #f1f3f6;
+    }
+
+    .navbar {
+      background-color: #2874f0;
+    }
+
+    .navbar-brand {
+      color: white;
+      font-weight: bold;
+    }
+
+    .navbar-brand span {
+      font-size: 12px;
+      color: #ffe500;
+      display: block;
+      line-height: 1;
+    }
+
+    .form-control {
+      width: 100%;
+      max-width: 500px;
+    }
+
+    h2 {
+      margin-top: 40px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .card img {
+      height: 200px;
+      object-fit: cover;
+    }
+    .swiper-container {
+      width: 100%;
+      height: 500px;
+    }
+
+    .swiper-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .custom-footer {
+  background-color: #121313;
+  color: #f8f9fa;
+  padding: 30px 10px 10px;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 14px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-section h5 {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section a {
+  text-decoration: none;
+  color: #eae5e5;
+}
+
+.footer-section a:hover {
+  color: #007bff;
+}
+
+.footer-bottom {
+  border-top: 1px solid #ccc;
+  text-align: center;
+  padding: 15px 0 5px;
+  font-size: 13px;
+  color: #666;
+}
+
+.contact-info p, .contact-info a {
+  margin: 0;
+  font-size: 13px;
+}
+
+
+    @media (max-width: 768px) {
+      .form-control {
+        max-width: 100%;
+      }
+
+      .card img {
+        height: 180px;
+      }
+
+      h1.display-5 {
+        font-size: 28px;
+      }
+
+      .lead {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      Flipkart<br>
+      <span style="font-size: 12px; color: #ffe500;">Explore <strong>Plus</strong></span>
+    </a>
+
+    <!-- Toggler/collapsible Button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#flipkartNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="flipkartNavbar">
+      <form class="d-flex mx-2 flex-grow-1">
+        <input class="form-control me-2" type="search" placeholder="Search for products">
+        <button class="btn btn-light" type="submit"><i class="fas fa-search"></i></button>
+      </form>
+
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="loginDropdown" role="button" data-bs-toggle="dropdown">
+            Login
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="loginDropdown">
+            <li><a class="dropdown-item" href="#">My Profile</a></li>
+            <li><a class="dropdown-item" href="#">Orders</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Become a Seller</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="moreDropdown" role="button" data-bs-toggle="dropdown">
+            More
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="moreDropdown">
+            <li><a class="dropdown-item" href="#">Customer Care</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i> Cart</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="swiper swiper-container">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <img src="jpg" alt="Banner 1" />
+    </div>
+    <div class="swiper-slide">
+      <img src="Flipkart Big Billion Days Sale 2025 [Coming Soon]_ Top BBD Offers & Deals(1).jpg" alt="Banner 2" />
+    </div>
+    <div class="swiper-slide">
+      <img src="Flipkart Big Billion Days Sale 2025 [Coming Soon]_ Top BBD Offers & Deals(2).jpg" alt="Banner 3" />
+    </div>
+    <div class="swiper-slide">
+      <img src="Flipkart Big Billion Days Sale 2025 [Coming Soon]_ Top BBD Offers & Deals.jpg" alt="Banner 4" />
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container">
+
+  <!-- Phones -->
+  <h2>📱 Phones</h2>
+  <div class="row">
+    <div class="col-sm-6 col-md-3">
+      <div class="card mb-4">
+        <img src="s-l1200.png" class="card-img-top" >
+        <div class="card-body">
+          <h5 class="card-title">iPhone 14</h5>
+          <p class="card-text">₹79,999</p>
+          <a href="#" class="btn btn-primary w-100">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-3">
+      <div class="card mb-4">
+        <img src="Galaxy-S23-Samsung.avif" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Samsung S23</h5>
+          <p class="card-text">₹69,999</p>
+          <a href="#" class="btn btn-primary w-100">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-3">
+      <div class="card mb-4">
+        <img src="salami-share.jpg" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">OnePlus 11</h5>
+          <p class="card-text">₹59,999</p>
+          <a href="#" class="btn btn-primary w-100">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-3">
+      <div class="card mb-4">
+        <img src="GDiMCASb0AAerMC_1705050599440.avif" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Realme 12</h5>
+          <p class="card-text">₹24,999</p>
+          <a href="#" class="btn btn-primary w-100">Buy Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Laptops -->
+  <h2>💻 Laptops</h2>
+  <div class="row">
+    <div class="col-sm-6 col-md-3">
+      <div class="card mb-4">
+        <img src="apple-na-original-imafr5acuz95sa5g.webp" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">MacBook Air</h5>
+          <p class="card-text">₹99,999</p>
+          <a href="#" class="btn btn-success w-100">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-3">
+      <div class="card mb-4">
+        <img src="dell-notebook-original-imae95wwyrfshv2s.webp" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Dell Inspiron</h5>
+          <p class="card-text">₹52,999</p>
+          <a href="#" class="btn btn-success w-100">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-3">
+      <div class="card mb-4">
+        <img src="-original-imah4u3gdbcczgmm.webp" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">HP Pavilion</h5>
+          <p class="card-text">₹61,999</p>
+          <a href="#" class="btn btn-success w-100">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-3">
+      <div class="card mb-4">
+        <img src="71Tp0GOd33L._UF894,1000_QL80_.jpg" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Lenovo IdeaPad</h5>
+          <p class="card-text">₹47,999</p>
+          <a href="#" class="btn btn-success w-100">Buy Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tablets -->
+  <h2>📝 Tablets</h2>
+  <div class="row">
+    <div class="col-sm-6 col-md-3">
+      <div class="card mb-4">
+        <img src="images.jpeg" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">iPad Air</h5>
+          <p class="card-text">₹55,000</p>
+          <a href="#" class="btn btn-warning w-100">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-3">
+      <div class="card mb-4">
+        <img src="galaxy-tab-a9-plus-db-709x800-1696830757.webp" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Samsung Tab</h5>
+          <p class="card-text">₹38,999</p>
+          <a href="#" class="btn btn-warning w-100">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-3">
+      <div class="card mb-4">
+        <img src="Lenovo-Tab-Extreme-1.webp" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Lenovo Tab</h5>
+          <p class="card-text">₹18,999</p>
+          <a href="#" class="btn btn-warning w-100">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-3">
+      <div class="card mb-4">
+        <img src="Realme_Pad_2_main_1689576184018.webp" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Realme Pad</h5>
+          <p class="card-text">₹14,999</p>
+          <a href="#" class="btn btn-warning w-100">Buy Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="custom-footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h5>About</h5>
+      <ul>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Press</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h5>Help</h5>
+      <ul>
+        <li><a href="#">Payments</a></li>
+        <li><a href="#">Shipping</a></li>
+        <li><a href="#">Returns</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h5>Policy</h5>
+      <ul>
+        <li><a href="#">Terms of Use</a></li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Security</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section contact-info">
+      <h5>Contact</h5>
+      <p><strong>Dhakshana Mohan</strong></p>
+      <p>📞 <a href="tel:+919876543210">+91 98765 43210</a></p>
+      <p>✉️ <a href="mailto:dhakshana@email.com">dhakshana@email.com</a></p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    &copy; 2025 Dhakshana Mohan. All rights reserved.
+  </div>
+</footer>
+
+
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper-container', {
+      loop: true,
+      autoplay: {
+        delay: 3000,
+      },
+    });
+  </script>
+</body>
+</html> 
